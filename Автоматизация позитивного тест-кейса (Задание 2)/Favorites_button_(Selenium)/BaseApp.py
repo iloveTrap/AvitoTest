@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 class BasePage:
     def __init__(self, driver):
         self.driver = driver
-        self.base_url = "https://www.avito.ru/severomorsk/knigi_i_zhurnaly/nazvanieglazami_zhertvy_avtor_mayk_omer_3682147837"
+        self.base_url = "https://www.avito.ru/nikel/knigi_i_zhurnaly/domain-driven_design_distilled_vaughn_vernon_2639542363"
 
     def find_element(self, locator, time=10):
         return WebDriverWait(self.driver, time).until(EC.presence_of_element_located(locator),
